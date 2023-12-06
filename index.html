@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>首页</title>
+</head>
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+  }
+
+  li{
+    list-style: none;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  body{
+    background-color: black;
+  }
+
+  .zhuangtailan{
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: rgb(31, 31, 31);
+    width: auto;
+    height: 48px;
+  }
+
+  .zhuangtailan ul li img{
+    float: left;
+    margin-top: 6px;
+    width: 82px;
+    height: 36px;
+  }
+
+  .li1{
+    float: left;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+
+  .li1 a{
+    display: inline-block;
+    width: 60px;
+    height: 26px;
+    background-color: #fff;
+    color: black;
+    font-size:14px ;
+    text-align: center;
+    line-height: 26px;
+    border-radius: 5px;
+    border: 1px solid #c1c1c1;
+  }
+
+  .li2{
+    float: left;
+    margin-top: 10px;
+  }
+
+  .li2 a{
+    display: inline-block;
+    width: 82px;
+    height: 26px;
+    background-color: #424242;
+    color: rgb(255, 255, 255);
+    font-size:14px ;
+    text-align: center;
+    line-height: 26px;
+    border-radius: 5px;
+    border: 1px solid #c1c1c1;
+    border-left: none;
+  }
+
+  .qiehuanlan li{
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .qiehuanlan li a{
+    display: inline-block;
+    color: #fff;
+    line-height: 46px;
+  }
+
+  .input1{
+    float: right;
+    margin-top: 12px;
+  }
+
+  .input1 li input{
+    background-color: #2b2b2b;
+    width: 168px;
+    height: 30px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 30px;
+  }
+
+  .dengluhezhuche li{
+    float: right;
+  }
+
+  .denglu{
+    margin-top: 12px;
+    margin-left: 20px;
+  }
+
+  .denglu a{
+    width: 46px;
+    height: 28px;
+    color: #fff;
+  }
+
+  .zhuche{
+    margin-top: 8px;
+    margin-left: 10px;
+  }
+
+  .zhuche a{
+    display: inline-block;
+    width: 46px;
+    height: 28px;
+    color: #fff;
+    border: 1px solid;
+    text-align: center;
+    line-height: 28px;
+    border-radius: 15px;
+
+  }
+
+  .neiron1{
+    margin: 120px auto;
+    width: 1224px;
+    height: 587px;
+    background-color: rgb(0, 0, 0);
+  }
+
+  .ziti{
+    margin-left: 102px;
+    margin-top: 59px;
+    float: left;
+    width: 530px;
+    height: 469px;
+    background-color: #000000;
+  }
+
+  .ziti h1{
+    font-size: 55px;
+    color: #fff;
+  }
+
+  .ziti input{
+    margin-top: 20px;
+    padding-left: 14px;
+    width: 288px;
+    height: 69px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    font-size: 22px;
+    background-color: #000000;
+  }
+
+  .ziti a{
+    margin-left: 23px;
+    display: inline-block;
+    background-color: #fff;
+    width: 171px;
+    height: 69px;
+    text-align: center;
+    line-height: 69px;
+    font-size: 22px;
+    color: #000000;
+    border-radius: 40px;
+  }
+
+  .ziti ul img{
+    display: inline-block;
+    margin-top: 100px;
+    margin-right: 55px;
+  }
+
+  .shipin{
+    margin-left: 204px;
+    padding-right: 12px;
+    float: left;
+    width: 306px;
+    height: 587px;
+    background-color: #000000;
+  }
+
+  .shipin video{
+    width: 306px;
+    height: 587px;
+  }
+
+  .jianbian{
+    position: relative;
+    width: auto;
+    height: 50px;
+    margin: 20px auto;
+    background: linear-gradient(90deg,  #ffc700 0%, #e91e1e 33%, #6f27b0 66%, #00ff88 100%);
+    background-position: 100% 0;
+    animation: bgSize 1s infinite ease-in-out alternate;
+  }
+
+  @keyframes bgSize {
+    0% {
+        background-size: 300% 100%;
+    }
+    100% {
+        background-size: 100% 100%;
+    }
+}
+
+.neiron2{
+  margin-top: 190px;
+  margin-bottom: 190px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1248px;
+  height: 1070px;
+  background-color: #000000;
+}
+
+.neiron2 h1{
+  font-size: 46px;
+  color: #fff;
+  text-align: center;
+}
+
+.neiron2 p{
+  margin-top: 30px;
+  font-size: 22px;
+  color: #6e6e6e;
+  text-align: center;
+}
+
+.neiron2 video{
+  margin-top: 100px;
+  margin-left: 10px;
+  width: 1224px;
+  height: 688px;
+}
+
+.neiron3{
+  margin: 0px auto;
+  padding: 120px 12px;
+  width: 1248px;
+  height:842px;
+  background-color: #000000;
+
+}
+
+.tupian{
+  margin-left: 204px;
+  padding: 0px 12px;
+  float: left;
+  width: 306px;
+  height: 602px;
+  background-color: #000000;
+}
+
+.qiehuan{
+  margin-left: 102px;
+  padding-left: 12px;
+  float: left;
+  width: 510px;
+  height: 456px;
+  background-color: #000000;
+}
+
+.tupian img{
+  width: 282px;
+  height: 601px;
+}
+
+.qiehuan h2{
+  color: #fff;
+  font-size: 47px;
+}
+
+.kuang1{
+  margin-top: 28px;
+  margin-bottom: 32px;
+  width: 498px;
+  height: 66px;
+  background-color: #000000;
+  border: 2px solid #fff;
+  border-radius: 40px;
+
+}
+
+.qiehuan p{
+  color: #fff;
+  font-size: 20px;
+}
+
+.qiehuan ul li{
+  float: left;
+}
+
+.qiehuan ul li a{
+  padding: 16px 12px;
+  display: inline-block;
+  width: 126px;
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+}
+
+.kuang11{
+  width: 124px;
+  height: 34px;
+  background-color: #000000;
+  border: 1px solid;
+  border-radius: 40px;
+  line-height: 34px;
+  
+}
+
+.neiron4{
+  margin: 80px auto;
+  width: 1248px;
+  height: 784px;
+  background-color: #000000;
+}
+
+.neiron4 h2{
+  text-align: center;
+  font-size: 46px;
+  color: #fff;
+}
+
+.neiron4 p{
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}
+
+.neiron4 video{
+  width: 1224px;
+  height: 330px;
+}
+
+.neiron5{
+  margin: 0px auto;
+  width: 1248px;
+  height: 962px;
+  background-color: #000000;
+}
+
+.neiron5 h2{
+  font-size: 46px;
+  color: #fff;
+}
+
+.neiron5 p{
+  margin-top: 20px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.ziti2{
+  float: left;
+  width: 612px;
+  height: 145px;
+}
+
+.logo1{
+  margin-left: 98px;
+  float: left;
+  width: 489px;
+  height: 149px;
+}
+
+.logo1 img{
+  width: 489px;
+  height: 149px;
+}
+
+.shipin1{
+  width: 1224px;
+  height: 190px;
+}
+
+.shipin1 li{
+  float: left;
+  margin-top: 80px;
+  padding-left: 22px;
+}
+
+.shipin1 li video{
+  float: left;
+  width: 384px;
+}
+
+.weibu{
+  width: auto;
+  height: 971px;
+  background-color: #000000;
+}
+
+.neiron6{
+  margin:50px auto;
+  width: 1248px;
+  height: 857px;
+  background-color: #000000;
+}
+
+.neiron6 img{
+  width: 86px;
+  height: 36px;
+}
+
+.neiron6 p{
+  font-size: 14px;
+  color: #5c5c5c;
+}
+
+.dl1{
+  margin-right: 88px;
+  float: left;
+}
+
+.dl1 dt{
+  margin-top: 100px;
+  margin-bottom: 16px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.dl1 dd{
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.dl1 dd a{
+  color: #6e6e6e;
+}
+
+.dl1 dd a:hover{
+  color: #fff;
+}
+
+.zhuche2{
+  float: left;
+  width: 208px;
+  height: 552px;
+}
+
+.zhuche2 ul li p{
+  font-size: 20px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+
+.zhuche2 ul li a{
+  margin-left: 10px;
+  margin-top: 40px;
+  display: inline-block;
+  width: 184px;
+  height: 50px;
+  background-color: #fff;
+  color: #000000;
+  text-align: center;
+  border-radius: 40px;
+  line-height: 50px;
+  font-size: 20px;
+}
+
+.zhuche2 ul li img{
+  margin-top: 40px;
+  margin-left: 50px;
+  width: 110px;
+  height: 110px;
+}
+
+
+</style>
+<body>
+  <!--logo和交易所钱包切换-->
+ <div class="zhuangtailan">
+  <ul>
+    <li><img src="./下载.png"></li>
+    <li class="li1"><a href="#">交易所</a></li>
+    <li class="li2"><a href="#">Web3钱包</a></li>
+  </ul>
+   <!--切换栏-->
+    <ul class="qiehuanlan">
+      <li><a href="#">买币</a></li>
+      <li><a href="#">发现</a></li>
+      <li><a href="#">交易</a></li>
+      <li><a href="#">金融</a></li>
+      <li><a href="#">公链</a></li>
+      <li><a href="#">机构客户</a></li>
+      <li><a href="#">新手学院</a></li>
+      <li><a href="#">更多</a></li>
+    </ul>
+    <!--登录和注册-->
+    <ul class="dengluhezhuche">
+      <li class="zhuche"><a href="#">注册</a></li>
+      <li class="denglu"><a href="#">登录</a></li>
+    </ul>
+        <!--搜索框-->
+        <ul class="input1">
+          <li><input type="search" placeholder="搜索币和其他产品"></li>
+        </ul>
+ </div>
+  <!--内容区域1-->
+  <div class="neiron1">
+    <div class="ziti">
+      <h1>加入全球领先的<br>一站式数字货币<br>App</h1>
+      <input type="email" placeholder="邮箱/手机号">
+      <a href="#">立即体验</a>
+      <ul>
+        <img src="./DD7AC9432E675714.webp" alt="" width="120px" height="48px">
+        <img src="./499A92F3657A52EC.webp" alt="" width="164px" height="43px">
+        <img src="./6279B178FADAFCC5.webp" alt="" width="66px" height="66px">
+      </ul>
+
+    </div>
+    <div class="shipin">
+      <video src="./7EFAD426B147E960 - Trim.mp4.webm"   autoplay loop muted></video>
+    </div>
+
+  </div>
+  <!--渐变-->
+  <div class="jianbian"></div>
+  <!--内容区域2-->
+  <div class="neiron2">
+    <h1>数字货币交易，我们是专业的</h1>
+    <p>最低的手续费，最快捷的交易，强劲的 API 以及更多</p>
+    <video src="./CB440B7DC62FD604.mp4" autoplay loop muted></video>
+
+  </div>
+  <!--内容区域3-->
+  <div class="neiron3">
+    <div class="tupian">
+      <img src="./E0E73AFD274E3715.webp">
+    </div>
+    <div class="qiehuan">
+      <h2>欧易App，创造无限可能</h2>
+      <div class="kuang1">
+        <ul>
+          <li><a href="#" class="kuang11">精简版</a></li>
+          <li><a href="#">Wbe3</a></li>
+          <li><a href="#">专业版</a></li>
+        </ul>
+      </div>
+      <p>初次交易？$5 即可小试牛刀，欧易和您一起步步登高</p>
+    </div>
+  </div>
+  <!--内容区域4-->
+  <div class="neiron4">
+    <h2>您数字货币之旅的得力助手</h2>
+    <br>
+    <p>从数字货币交易初体验到第一次购买 NFT，欧易将助您轻松赚币</p>
+    <video src="./D47D930F643E7A00.webm" autoplay loop muted></video>
+
+  </div>
+  <!--内容区域5-->
+  <div class="neiron5">
+    <div class="ziti2">
+    <h2>走近欧易</h2>
+    <p>在我们世界级合作伙伴的帮助下，了解为什么欧易会是你最喜爱的数字货币交易App</p>
+    </div>
+
+    <div class="logo1">
+      <img src="./CE0AD2E6133080DF.webp" alt="">
+    </div>
+
+    <ul class="shipin1">
+      <li><video src="./B961D658AE174818.mp4" controls></video></li>
+      <li><video src="./D583B0A2F58732CD.mp4" controls></video></li>
+      <li><video src="./CCAA7B610D3D33D4.mp4" controls></video></li>
+    </ul>
+  </div>
+  <!--尾部栏-->
+  <div class="weibu">
+    <div class="neiron6">
+      <img src="./下载.png">
+      <p>©2017 - 2023 OKX.COM</p>
+
+      <dl class="dl1">
+        <dt>关于欧易</dt>
+        <dd><a href="#">关于我们</a></dd>
+        <dd><a href="#">职业机会</a></dd>
+        <dd><a href="#">联系我们</a></dd>
+        <dd><a href="#">服务条款</a></dd>
+        <dd><a href="#">隐私保护</a></dd>
+        <dd><a href="#">免责声明</a></dd>
+        <dd><a href="#">廉正举报</a></dd>
+        <dd><a href="#">执法请求</a></dd>
+        <dd><a href="#">欧易 App</a></dd>
+      </dl>
+
+      <dl class="dl1">
+        <dt>产品</dt>
+        <dd><a href="#">快捷买币</a></dd>
+        <dd><a href="#">C2C 交易</a></dd>
+        <dd><a href="#">闪兑</a></dd>
+        <dd><a href="#">赚币</a></dd>
+        <dd><a href="#">OKTC</a></dd>
+        <dd><a href="#">Web3 钱包</a></dd>
+        <dd><a href="#">Web3 市场</a></dd>
+        <dd><a href="#">数字货币计算器</a></dd>
+        <dd><a href="#">策略交易</a></dd>
+        <dd><a href="#">浏览所有数字货币</a></dd>
+        <dd><a href="#">数字学院</a></dd>
+        <dd><a href="#">TradingView</a></dd>
+      </dl>
+
+      <dl class="dl1">
+        <dt>服务</dt>
+        <dd><a href="#">节点计划</a></dd>
+        <dd><a href="#">V5 API</a></dd>
+        <dd><a href="#">历史行情数据</a></dd>
+        <dd><a href="#">费率标准</a></dd>
+        <dd><a href="#">上市申请</a></dd>
+        <dd><a href="#">C2C 认证商家申请</a></dd>
+      </dl>
+
+      <dl class="dl1">
+        <dt>买币</dt>
+        <dd><a href="#">购买 USDC</a></dd>
+        <dd><a href="#">购买泰达币 （USDT）</a></dd>
+        <dd><a href="#">购买比特币 （BTC）</a></dd>
+        <dd><a href="#">购买以太币 （ETH）</a></dd>
+        <dd><a href="#">购买 ADA</a></dd>
+        <dd><a href="#">购买 Solana</a></dd>
+        <dd><a href="#">购买 Solana</a></dd>
+        <dd><a href="#">购买 MATIC</a></dd>
+        <dd><a href="#">购买 Litecoin</a></dd>
+        <dd><a href="#">购买 XRP</a></dd>
+      </dl>
+
+      <dl class="dl1">
+        <dt>交易</dt>
+        <dd><a href="#">BTC USDC</a></dd>
+        <dd><a href="#">ETH USDC</a></dd>
+        <dd><a href="#">BTC USDT</a></dd>
+        <dd><a href="#">ETH USDT</a></dd>
+        <dd><a href="#">MATIC USDT</a></dd>
+        <dd><a href="#">LTC USDT</a></dd>
+        <dd><a href="#">SOL USDT</a></dd>
+        <dd><a href="#">XPR USDT</a></dd>
+        <dd><a href="#">比特币（BTC）价格</a></dd>
+        <dd><a href="#">以太坊（ETH）价格</a></dd>
+        <dd><a href="#">Cardano 价格</a></dd>
+        <dd><a href="#">Solana 价格</a></dd>
+        <dd><a href="#">XPR 价格</a></dd>
+      </dl>
+
+      <div class="zhuche2">
+        <ul>
+          <li><p>欧易，随时随地交易</p></li>
+          <li><a href="#">注册</a></li>
+          <li><img src="./下载 (1).png" alt=""></li>
+          <li><p>扫码下载欧易 App </p></li>
+        </ul>
+
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
